@@ -15,4 +15,4 @@
 . . f c c f 4 5 5 4 4 f 4 4 . . 
 . . . f f f f f f f f . . . . . 
 . . . . . f f . . f f . . . . . 
-`</field><data>{"commentRefs":[],"fieldData":{"img":"1as]mNM;^oW4hZV0}.xn"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="Ir;mScjz]CHIU/|n-+mO"><field name="MEMBER">Player</field></shadow></value></block></value></block></statement></block></xml>
+`</field><data>{"commentRefs":[],"fieldData":{"img":"1as]mNM;^oW4hZV0}.xn"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="Ir;mScjz]CHIU/|n-+mO"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="gameOver" id="_0-ZXdk%tQQjK{7}Qc=j"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="win"><shadow type="toggleWinLose" id="UHh9Rd|TVP?Nxb5hj]8e"><field name="win">false</field></shadow></value></block></next></block></statement></block></xml>
