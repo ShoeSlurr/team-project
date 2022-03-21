@@ -438,8 +438,21 @@ controller.player2.onButtonEvent(ControllerButton.Right, ControllerButtonEvent.R
     true
     )
 })
+function playerLeader (follow: number) {
+    if (follow == 1) {
+        scene.cameraFollowSprite(Aarav)
+    } else if (follow == 2) {
+        scene.cameraFollowSprite(Nick)
+    } else {
+        game.splash("Please enter a valid number.")
+        leader = game.askForNumber("Is player 1 or 2 the leader?", 1)
+        playerLeader(leader)
+    }
+}
+let leader = 0
 let Nick: Sprite = null
-let Aarav = sprites.create(img`
+let Aarav: Sprite = null
+Aarav = sprites.create(img`
     ffffffffffffffffffffffffffffffffffffffffffffffffff
     ffffffffffffffffffffffffffffffffffffffffffffffffff
     ffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -595,6 +608,8 @@ let demon = sprites.create(img`
     ..................................................
     ..................................................
     `, SpriteKind.Player)
+leader = game.askForNumber("Is player 1 or 2 the leader?", 1)
+playerLeader(leader)
 controller.player1.moveSprite(Aarav, 100, 100)
 controller.player2.moveSprite(Nick, 100, 100)
 scene.setBackgroundImage(img`
